@@ -1,0 +1,2405 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDM - Premium Digital Marketing & Web Development Agency</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'><polygon points='50,5 95,25 95,75 50,95 5,75 5,25' stroke='%2300f5ff' stroke-width='4'/><text x='50%' y='65%' font-family='Orbitron, sans-serif' font-weight='900' font-size='32' fill='%23ff006e' text-anchor='middle'>HDM</text></svg>">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="HDM (Hasnain Digital Marketing) is a top-rated agency in Bahawalpur specializing in WordPress development, SEO, Social Media Marketing, and Lead Generation. Transform your business with our data-driven digital solutions.">
+    <meta name="keywords"
+        content="Digital Marketing Agency Pakistan, Web Development Bahawalpur, SEO Expert, WordPress Developer, Lead Generation Services, HDM agency, Muhammad Hasnain Digital Marketing">
+    <meta name="author" content="Muhammad Hasnain">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hdm-agency.com/">
+    <meta property="og:title" content="HDM - Premium Digital Marketing & Web Development Agency">
+    <meta property="og:description"
+        content="Boost your brand with HDM. Expert WordPress design, SEO growth, and targeted digital marketing strategies.">
+    <meta property="og:image" content="https://hdm-agency.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hdm-agency.com/">
+    <meta property="twitter:title" content="HDM - Premium Digital Marketing & Web Development Agency">
+    <meta property="twitter:description"
+        content="Boost your brand with HDM. Expert WordPress design, SEO growth, and targeted digital marketing strategies.">
+    <meta property="twitter:image" content="https://hdm-agency.com/og-image.jpg">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "HDM - Digital Marketing Agency",
+      "image": "https://hdm-agency.com/logo.png",
+      "@id": "https://hdm-agency.com/",
+      "url": "https://hdm-agency.com/",
+      "telephone": "+923045760822",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bahawalpur",
+        "addressLocality": "Punjab",
+        "postalCode": "63100",
+        "addressCountry": "PK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 29.3542,
+        "longitude": 71.6911
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "23:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/hdm",
+        "https://www.linkedin.com/in/MuhammadHasnain",
+        "https://www.instagram.com/hdm"
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Real Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* ================================================
+   ULTRA-MODERN CYBERPUNK DESIGN - HDM
+   ================================================ */
+
+        :root {
+            /* Neon Colors */
+            --neon-pink: #ff006e;
+            --neon-blue: #00f5ff;
+            --neon-yellow: #ffbe0b;
+            --neon-purple: #7209b7;
+            --neon-green: #39ff14;
+
+            /* Dark Theme */
+            --bg-dark: #0a0a0a;
+            --bg-darker: #000000;
+            --bg-card: #1a1a1a;
+
+            /* Typography */
+            --font-display: 'Orbitron', sans-serif;
+            --font-heading: 'Rajdhani', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-dark);
+            color: #fff;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* ===== CUSTOM SCROLLBAR ===== */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-dark);
+            border-left: 1px solid rgba(255, 0, 110, 0.2);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(var(--neon-pink), var(--neon-purple));
+            border-radius: 5px;
+            border: 2px solid var(--bg-dark);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(var(--neon-blue), var(--neon-purple));
+            box-shadow: 0 0 15px var(--neon-pink);
+        }
+
+        /* ===== WARNING MODAL ===== */
+        .warning-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+            backdrop-filter: blur(10px);
+        }
+
+        .warning-content {
+            background: #111;
+            border: 2px solid var(--neon-pink);
+            padding: 1.5rem;
+            text-align: center;
+            max-width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 0 30px var(--neon-pink);
+            animation: shake 0.5s ease-in-out, flash-red 0.5s ease-in-out;
+            position: relative;
+        }
+
+        .warning-content h2 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            color: var(--neon-pink);
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 15px var(--neon-pink);
+        }
+
+        .warning-content p {
+            color: #fff;
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+            line-height: 1.4;
+        }
+
+        .warning-sub {
+            color: var(--neon-blue) !important;
+            font-weight: bold;
+            font-size: 0.9rem !important;
+        }
+
+        .warning-footer {
+            color: rgba(255, 255, 255, 0.5) !important;
+            font-style: italic;
+            margin-top: 1rem !important;
+            font-size: 0.8rem !important;
+        }
+
+        .warning-content button {
+            background: var(--neon-pink);
+            color: #fff;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px var(--neon-pink);
+        }
+
+        .warning-content button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px var(--neon-pink);
+        }
+
+        @keyframes flash-red {
+            0% {
+                background: rgba(255, 0, 110, 0.5);
+            }
+
+            100% {
+                background: #111;
+            }
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            10%,
+            30%,
+            50%,
+            70%,
+            90% {
+                transform: translateX(-5px);
+            }
+
+            20%,
+            40%,
+            60%,
+            80% {
+                transform: translateX(5px);
+            }
+        }
+
+        /* ===== PARTICLES BACKGROUND ===== */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        /* ===== SCANLINES EFFECT ===== */
+        .scanlines {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1000;
+            background: repeating-linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.15),
+                    rgba(0, 0, 0, 0.15) 1px,
+                    transparent 1px,
+                    transparent 2px);
+            opacity: 0.3;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 0;
+            z-index: 999;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--neon-pink);
+            box-shadow: 0 0 20px rgba(255, 0, 110, 0.3);
+        }
+
+        .header .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--neon-pink);
+            text-decoration: none;
+            text-shadow: 0 0 10px var(--neon-pink),
+                0 0 20px var(--neon-pink),
+                0 0 30px var(--neon-pink);
+            letter-spacing: 3px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .nav a::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--neon-blue);
+            box-shadow: 0 0 10px var(--neon-blue);
+            transition: width 0.3s ease;
+        }
+
+        .nav a:hover::before {
+            width: 100%;
+        }
+
+        .nav a:hover {
+            color: var(--neon-blue);
+            text-shadow: 0 0 10px var(--neon-blue);
+        }
+
+        .cta-btn {
+            padding: 0.75rem 2rem;
+            background: transparent;
+            border: 2px solid var(--neon-pink);
+            color: var(--neon-pink);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            text-transform: uppercase;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--neon-pink);
+            transition: left 0.3s ease;
+            z-index: -1;
+        }
+
+        .cta-btn:hover::before {
+            left: 0;
+        }
+
+        .cta-btn:hover {
+            color: #000;
+            box-shadow: 0 0 20px var(--neon-pink);
+        }
+
+        /* ===== SPLIT HERO ===== */
+        .hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+            padding-top: 80px;
+        }
+
+        .hero-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem;
+            background: linear-gradient(135deg, rgba(255, 0, 110, 0.1) 0%, transparent 100%);
+            border-right: 2px solid var(--neon-pink);
+            box-shadow: 0 0 30px rgba(255, 0, 110, 0.2);
+        }
+
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: #fff;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .glitch {
+            position: relative;
+            color: var(--neon-pink);
+            text-shadow: 0 0 10px var(--neon-pink),
+                0 0 20px var(--neon-pink),
+                0 0 30px var(--neon-pink),
+                0 0 40px var(--neon-pink);
+            animation: glitch 2s infinite;
+        }
+
+        @keyframes glitch {
+
+            0%,
+            100% {
+                transform: translate(0);
+            }
+
+            20% {
+                transform: translate(-2px, 2px);
+            }
+
+            40% {
+                transform: translate(-2px, -2px);
+            }
+
+            60% {
+                transform: translate(2px, 2px);
+            }
+
+            80% {
+                transform: translate(2px, -2px);
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            padding: 1rem 2.5rem;
+            background: var(--neon-pink);
+            border: none;
+            color: #000;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 0 30px var(--neon-pink),
+                0 0 60px var(--neon-pink);
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            padding: 1rem 2.5rem;
+            background: transparent;
+            border: 2px solid var(--neon-blue);
+            color: var(--neon-blue);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-secondary:hover {
+            background: var(--neon-blue);
+            color: #000;
+            box-shadow: 0 0 30px var(--neon-blue);
+        }
+
+        .hero-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem;
+            position: relative;
+        }
+
+        .hero-visual {
+            width: 100%;
+            max-width: 500px;
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, var(--neon-pink), var(--neon-blue), var(--neon-yellow));
+            border-radius: 20px;
+            position: relative;
+            animation: float 6s ease-in-out infinite;
+            box-shadow: 0 0 60px rgba(255, 0, 110, 0.5);
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+
+        .hero-visual::before {
+            content: '';
+            position: absolute;
+            inset: 10px;
+            background: var(--bg-dark);
+            border-radius: 15px;
+        }
+
+        .hero-img {
+            position: absolute;
+            inset: 10px;
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+            object-fit: cover;
+            border-radius: 15px;
+            z-index: 2;
+        }
+
+        /* ===== STATS ===== */
+        .stats {
+            padding: 4rem 2rem;
+            background: rgba(255, 0, 110, 0.05);
+            border-top: 1px solid var(--neon-pink);
+            border-bottom: 1px solid var(--neon-pink);
+        }
+
+        .stats-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--neon-blue);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px var(--neon-blue);
+            border-color: var(--neon-pink);
+        }
+
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--neon-pink);
+            text-shadow: 0 0 20px var(--neon-pink);
+        }
+
+        .stat-label {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-transform: uppercase;
+            margin-top: 0.5rem;
+        }
+
+        /* ===== ABOUT FOUNDER ===== */
+        .about-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 0;
+        }
+
+        .about-card {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid var(--neon-purple);
+            border-radius: 20px;
+            padding: 3rem;
+            display: flex;
+            gap: 3rem;
+            max-width: 1000px;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(114, 9, 183, 0.3);
+        }
+
+        .about-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--neon-pink);
+            box-shadow: 0 0 10px var(--neon-pink);
+        }
+
+        .founder-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--neon-blue);
+            box-shadow: 0 0 30px var(--neon-blue);
+        }
+
+        .about-content h3 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .founder-role {
+            display: inline-block;
+            font-family: var(--font-heading);
+            color: var(--neon-yellow);
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .about-content p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 2rem;
+            }
+        }
+
+        /* ===== SECTION STYLES ===== */
+        .section {
+            padding: 6rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--neon-blue);
+            text-shadow: 0 0 20px var(--neon-blue);
+            text-transform: uppercase;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 4rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ===== SERVICES ===== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: rgba(0, 0, 0, 0.7);
+            border: 2px solid var(--neon-pink);
+            border-radius: 15px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, var(--neon-pink), transparent);
+            transform: rotate(45deg);
+            transition: all 0.6s ease;
+            opacity: 0;
+        }
+
+        .service-card:hover::before {
+            opacity: 0.1;
+            animation: shine 1.5s infinite;
+        }
+
+        @keyframes shine {
+            0% {
+                transform: translateX(-100%) rotate(45deg);
+            }
+
+            100% {
+                transform: translateX(100%) rotate(45deg);
+            }
+        }
+
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 0 40px var(--neon-pink);
+            border-color: var(--neon-blue);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            transition: all 0.4s ease;
+        }
+
+        .service-card:hover .service-icon {
+            transform: rotateY(360deg) scale(1.2);
+            filter: drop-shadow(0 0 20px var(--neon-yellow));
+        }
+
+        .service-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--neon-yellow);
+            text-transform: uppercase;
+        }
+
+        .service-card p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.7;
+        }
+
+
+        /* ===== PORTFOLIO ===== */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-item {
+            position: relative;
+            height: 400px;
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid var(--neon-blue);
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 50px var(--neon-blue);
+        }
+
+        .portfolio-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.4s ease;
+            opacity: 0.6;
+        }
+
+        .portfolio-item:hover .portfolio-img {
+            transform: scale(1.1);
+            opacity: 0.4;
+        }
+
+        .portfolio-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent);
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+        }
+
+        .portfolio-item:hover .portfolio-content {
+            transform: translateY(0);
+        }
+
+        .portfolio-content h3 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            color: var(--neon-yellow);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .portfolio-content p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1rem;
+        }
+
+        .portfolio-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .portfolio-tag {
+            padding: 0.25rem 0.75rem;
+            background: var(--neon-pink);
+            color: #000;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 3px;
+        }
+
+        /* ===== PRICING ===== */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid var(--neon-pink);
+            border-radius: 15px;
+            padding: 2.5rem;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--neon-yellow);
+            transform: scale(1.05);
+            box-shadow: 0 0 40px var(--neon-yellow);
+        }
+
+        .pricing-card:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 50px var(--neon-pink);
+        }
+
+        .pricing-badge {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: var(--neon-pink);
+            color: #000;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            border-radius: 5px;
+        }
+
+        .pricing-card.featured .pricing-badge {
+            background: var(--neon-yellow);
+            animation: pulse-glow 2s infinite;
+        }
+
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px var(--neon-yellow);
+            }
+
+            50% {
+                box-shadow: 0 0 40px var(--neon-yellow);
+            }
+        }
+
+        .pricing-price {
+            font-family: var(--font-display);
+            font-size: 4rem;
+            font-weight: 900;
+            color: var(--neon-blue);
+            text-shadow: 0 0 20px var(--neon-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-period {
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 2rem;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            padding: 0.75rem 0;
+            color: rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .pricing-features li::before {
+            content: "✓";
+            color: var(--neon-green);
+            font-weight: bold;
+            margin-right: 0.75rem;
+            text-shadow: 0 0 10px var(--neon-green);
+        }
+
+        /* ===== CONTACT ===== */
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid var(--neon-blue);
+            border-radius: 15px;
+            padding: 2.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--neon-yellow);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--neon-pink);
+            border-radius: 5px;
+            color: #fff;
+            font-family: var(--font-body);
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-info-item {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid var(--neon-pink);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 0 30px var(--neon-pink);
+        }
+
+        .contact-info-item h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--neon-yellow);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .contact-info-item p,
+        .contact-info-item a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info-item a:hover {
+            color: var(--neon-blue);
+            text-shadow: 0 0 10px var(--neon-blue);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: rgba(0, 0, 0, 0.95);
+            border-top: 2px solid var(--neon-pink);
+            padding: 3rem 2rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h4 {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            color: var(--neon-pink);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .footer-col p,
+        .footer-col a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col a:hover {
+            color: var(--neon-blue);
+            text-shadow: 0 0 10px var(--neon-blue);
+            padding-left: 5px;
+        }
+
+        /* ===== REAL SOCIAL ICONS ===== */
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid var(--neon-pink);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--neon-pink);
+            font-size: 1.3rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--neon-pink);
+            color: #000;
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px var(--neon-pink);
+        }
+
+        .social-link.facebook:hover {
+            background: #1877f2;
+            border-color: #1877f2;
+            color: #fff;
+            box-shadow: 0 0 20px #1877f2;
+        }
+
+        .social-link.twitter:hover {
+            background: #1da1f2;
+            border-color: #1da1f2;
+            color: #fff;
+            box-shadow: 0 0 20px #1da1f2;
+        }
+
+        .social-link.linkedin:hover {
+            background: #0077b5;
+            border-color: #0077b5;
+            color: #fff;
+            box-shadow: 0 0 20px #0077b5;
+        }
+
+        .social-link.instagram:hover {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            border-color: #e6683c;
+            color: #fff;
+            box-shadow: 0 0 20px #e6683c;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-bottom a {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--neon-pink);
+            text-shadow: 0 0 10px var(--neon-pink);
+        }
+
+        /* Center Right WhatsApp */
+        /* Center Right WhatsApp */
+        .whatsapp-side {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background: #25D366;
+            color: white;
+            padding: 12px 15px 12px 20px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            animation: sidePulse 2s infinite;
+        }
+
+        .whatsapp-side:hover {
+            transform: translateY(-50%) translateX(-5px);
+            padding-right: 25px;
+        }
+
+        .whatsapp-side span {
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        .whatsapp-side i {
+            font-size: 1.5rem;
+        }
+
+        @keyframes sidePulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* Floating Buttons Container */
+        .floating-buttons {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 998;
+        }
+
+        .fiverr-float,
+        .upwork-float {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .fiverr-float {
+            background: #1dbf73;
+            animation: pulseFiverr 2s infinite;
+        }
+
+        .upwork-float {
+            background: #6fda44;
+            animation: pulseUpwork 2s infinite;
+        }
+
+        .fiverr-float:hover,
+        .upwork-float:hover {
+            transform: scale(1.1);
+            filter: brightness(1.1);
+        }
+
+        @keyframes pulseFiverr {
+            0% {
+                box-shadow: 0 0 0 0 rgba(29, 191, 115, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(29, 191, 115, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(29, 191, 115, 0);
+            }
+        }
+
+        @keyframes pulseUpwork {
+            0% {
+                box-shadow: 0 0 0 0 rgba(111, 218, 68, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(111, 218, 68, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(111, 218, 68, 0);
+            }
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--neon-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #000;
+            text-decoration: none;
+            box-shadow: 0 0 20px var(--neon-blue);
+            z-index: 998;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px var(--neon-blue);
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+
+        /* ===== MOBILE MENU & RESPONSIVENESS ===== */
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            z-index: 1001;
+            position: absolute;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .bar {
+            width: 30px;
+            height: 3px;
+            background-color: var(--neon-pink);
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(20px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            z-index: 1000;
+            transform: translateX(100%);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+
+        .menu-close {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: transparent;
+            border: none;
+            color: var(--neon-pink);
+            font-size: 2.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .menu-close:hover {
+            color: var(--neon-blue);
+            transform: rotate(90deg);
+        }
+
+        .mobile-menu a {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu a:hover {
+            color: var(--neon-blue);
+            text-shadow: 0 0 20px var(--neon-blue);
+        }
+
+        /* Response Adjustments */
+        @media (max-width: 1024px) {
+            .nav {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: flex;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                padding-top: 100px;
+                text-align: center;
+            }
+
+            .hero-left {
+                padding: 2rem 1rem;
+                border-right: none;
+                align-items: center;
+                border-bottom: 2px solid var(--neon-pink);
+            }
+
+            .hero-title {
+                font-size: 3.5rem;
+            }
+
+            .hero-right {
+                padding: 4rem 1rem;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-grid,
+            .services-grid,
+            .portfolio-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-col a:hover {
+                padding-left: 0;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .cta-btn {
+                display: none;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-left,
+            .hero-right {
+                padding: 2rem;
+            }
+
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .nav {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .services-grid,
+            .portfolio-grid,
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-title {
+                font-size: 3rem;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* ===== PRELOADER ===== */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-darker);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        #preloader.fade-out {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .preloader-content {
+            animation: fadeInScale 1s ease-out forwards;
+        }
+
+        .preloader-logo {
+            font-family: var(--font-display);
+            font-size: 5rem;
+            color: var(--neon-pink);
+            text-shadow: 0 0 20px var(--neon-pink);
+            margin-bottom: 1rem;
+            letter-spacing: 10px;
+        }
+
+        .preloader-agency {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--neon-blue);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 0.5s forwards;
+        }
+
+        .preloader-founder-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards;
+        }
+
+        .preloader-founder-name {
+            font-family: var(--font-body);
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        .preloader-founder-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid var(--neon-pink);
+            box-shadow: 0 0 20px var(--neon-pink);
+            object-fit: cover;
+            animation: breathingGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes breathingGlow {
+
+            0%,
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 20px var(--neon-pink);
+            }
+
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 40px var(--neon-pink);
+            }
+        }
+
+        @keyframes fadeInScale {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slowSpin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">HDM</div>
+            <div class="preloader-agency">Digital Marketing Agency</div>
+            <div class="preloader-founder-info">
+                <div class="preloader-founder-name">By Muhammad Hasnain</div>
+                <img src="" alt="Founder" class="preloader-founder-img" id="preloaderImg">
+            </div>
+        </div>
+    </div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Scanlines Effect -->
+    <div class="scanlines"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#home" class="logo">HDM</a>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="#contact" class="cta-btn">Get Started</a>
+        </div>
+        <!-- Mobile Menu Toggle -->
+        <div class="mobile-toggle" id="mobileToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="menu-close" onclick="toggleMenu()">&times;</button>
+            <a href="#home" onclick="toggleMenu()">Home</a>
+            <a href="#about" onclick="toggleMenu()">About</a>
+            <a href="#services" onclick="toggleMenu()">Services</a>
+            <a href="#portfolio" onclick="toggleMenu()">Portfolio</a>
+            <a href="#pricing" onclick="toggleMenu()">Pricing</a>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
+        </div>
+    </header>
+
+    <!-- Split Hero -->
+    <section class="hero" id="home">
+        <div class="hero-left">
+            <h1 class="hero-title">
+                TRANSFORM<br>
+                YOUR<br>
+                <span class="glitch">DIGITAL</span><br>
+                PRESENCE
+            </h1>
+            <p class="hero-subtitle">
+                Premium digital marketing solutions that drive real results
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Start Project</a>
+                <a href="#portfolio" class="btn-secondary">View Work</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-visual">
+                <img src="hero-image.jpg" alt="Muhammad Hasnain" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Satisfaction</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Years</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Founder -->
+    <section class="section" id="about">
+        <h2 class="section-title">About Founder</h2>
+        <div class="about-container">
+            <div class="about-card">
+                <div class="about-visual">
+                    <img src="hero-image.jpg" alt="Muhammad Hasnain" class="founder-img">
+                </div>
+                <div class="about-content">
+                    <h3>Muhammad Hasnain</h3>
+                    <span class="founder-role">Founder & CEO</span>
+                    <p>
+                        Visionary leader transforming the digital landscape with innovative strategies and premium
+                        solutions. Dedicated to helping businesses grow and succeed in the modern era.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">Cutting-edge digital solutions for modern businesses</p>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-rocket"></i></div>
+                <h3>Web Development</h3>
+                <p>Fast, conversion-optimized websites built with modern technologies</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                <h3>Digital Marketing</h3>
+                <p>Data-driven strategies that maximize your ROI</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-magnifying-glass"></i></div>
+                <h3>SEO Optimization</h3>
+                <p>Dominate search results and drive organic traffic</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-palette"></i></div>
+                <h3>Graphic Design</h3>
+                <p>Stunning visuals that captivate your audience</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-envelope-open-text"></i></div>
+                <h3>Email Marketing</h3>
+                <p>Automated campaigns that convert leads to customers</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-share-nodes"></i></div>
+                <h3>Social Media</h3>
+                <p>Build your brand and engage your community</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-filter-circle-dollar"></i></div>
+                <h3>Lead Generation</h3>
+                <p>High-quality B2B & B2C leads to fuel your sales pipeline</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-headset"></i></div>
+                <h3>Virtual Assistant</h3>
+                <p>Professional administrative support to streamline your operations</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-keyboard"></i></div>
+                <h3>Data Entry & Product Listing</h3>
+                <p>Accurate product listing and data management services</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portfolio -->
+    <section class="section" id="portfolio">
+        <h2 class="section-title">Our Work</h2>
+        <p class="section-subtitle">Proven results across diverse projects</p>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="C:/Users/Muhammad Hasnain/.gemini/antigravity/brain/e5c0776c-7e80-443d-a6f8-2829791a7965/ecommerce_dashboard_visual_1769467942761.png"
+                    class="portfolio-img" alt="E-commerce Project">
+                <div class="portfolio-content">
+                    <h3>E-commerce Platform</h3>
+                    <p>Increased sales by 250% with targeted campaigns</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">SEO</span>
+                        <span class="portfolio-tag">Marketing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="C:/Users/Muhammad Hasnain/.gemini/antigravity/brain/e5c0776c-7e80-443d-a6f8-2829791a7965/brand_identity_package_1769467958249.png"
+                    class="portfolio-img" alt="Brand Identity Project">
+                <div class="portfolio-content">
+                    <h3>Brand Identity</h3>
+                    <p>Complete transformation with stunning visuals</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">Branding</span>
+                        <span class="portfolio-tag">Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="C:/Users/Muhammad Hasnain/.gemini/antigravity/brain/e5c0776c-7e80-443d-a6f8-2829791a7965/lead_gen_visual_1769467973692.png"
+                    class="portfolio-img" alt="Lead Generation Project">
+                <div class="portfolio-content">
+                    <h3>Lead Generation</h3>
+                    <p>Generated 500+ qualified leads per month</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">Automation</span>
+                        <span class="portfolio-tag">Leads</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=400&h=300&q=80"
+                    class="portfolio-img" alt="VA Project">
+                <div class="portfolio-content">
+                    <h3>Virtual Assistance</h3>
+                    <p>Executive support & business management for CEO</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">VA</span>
+                        <span class="portfolio-tag">Management</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=400&h=300&q=80"
+                    class="portfolio-img" alt="Store Management Project">
+                <div class="portfolio-content">
+                    <h3>Store Management</h3>
+                    <p>Managed 500+ products catalog & inventory</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">Data Entry</span>
+                        <span class="portfolio-tag">Shopify</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&h=300&q=80"
+                    class="portfolio-img" alt="SEO Project">
+                <div class="portfolio-content">
+                    <h3>Traffic Growth</h3>
+                    <p>300% Organic traffic increase in 6 months</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">SEO</span>
+                        <span class="portfolio-tag">Growth</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="C:/Users/Muhammad Hasnain/.gemini/antigravity/brain/e5c0776c-7e80-443d-a6f8-2829791a7965/wordpress_ecommerce_mockup_1769464595747.png"
+                    class="portfolio-img" alt="WordPress E-commerce Project">
+                <div class="portfolio-content">
+                    <h3>WordPress E-commerce</h3>
+                    <p>Modern fashion store with ultra-fast performance</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">WordPress</span>
+                        <span class="portfolio-tag">Shopify</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="C:/Users/Muhammad Hasnain/.gemini/antigravity/brain/e5c0776c-7e80-443d-a6f8-2829791a7965/wordpress_business_mockup_1769464610171.png"
+                    class="portfolio-img" alt="WordPress Business Project">
+                <div class="portfolio-content">
+                    <h3>Corporate Site</h3>
+                    <p>Professional business presence with custom features</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">WordPress</span>
+                        <span class="portfolio-tag">Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="C:/Users/Muhammad Hasnain/.gemini/antigravity/brain/e5c0776c-7e80-443d-a6f8-2829791a7965/social_media_marketing_mockup_1769464627111.png"
+                    class="portfolio-img" alt="Social Media Marketing Project">
+                <div class="portfolio-content">
+                    <h3>Social Media Power</h3>
+                    <p>Brand dominance with omnichannel marketing</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">Marketing</span>
+                        <span class="portfolio-tag">Brand</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=400&h=300&q=80"
+                    class="portfolio-img" alt="Social Media Project">
+                <div class="portfolio-content">
+                    <h3>Social Media Mgmt</h3>
+                    <p>Grew Instagram following by 50k in 3 months</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">Content</span>
+                        <span class="portfolio-tag">Engagement</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=400&h=300&q=80"
+                    class="portfolio-img" alt="Content Writing Project">
+                <div class="portfolio-content">
+                    <h3>Content Writing</h3>
+                    <p>SEO-optimized blog posts driving high authority</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">Blogs</span>
+                        <span class="portfolio-tag">Copywriting</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=400&h=300&q=80"
+                    class="portfolio-img" alt="Email Marketing Project">
+                <div class="portfolio-content">
+                    <h3>Email Automation</h3>
+                    <p>35% Open rate for e-commerce drip campaigns</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">Automation</span>
+                        <span class="portfolio-tag">Retention</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+        <h2 class="section-title">Custom Pricing Plans</h2>
+        <p class="section-subtitle">Tailored solutions for your specific business needs</p>
+
+        <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+            <div class="pricing-card"
+                style="max-width: 800px; text-align: center; border-color: var(--neon-blue); box-shadow: 0 0 30px rgba(0, 245, 255, 0.3);">
+                <div class="pricing-badge" style="background: var(--neon-blue); color: #000;">Tailored Solutions</div>
+                <h3 style="font-family: var(--font-display); font-size: 2.2rem; color: #fff; margin-bottom: 1.5rem;">
+                    Custom Pricing Plans</h3>
+                <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.2rem; margin-bottom: 2rem; line-height: 1.8;">
+                    Every project is unique, and so is pricing. The cost depends on the scope of your work and what you
+                    need.<br><br>
+                    Please contact the HDM team for a short meeting to discuss your project and finalize the cost.
+                </p>
+                <a href="#contact" class="btn-primary"
+                    style="background: var(--neon-blue); box-shadow: 0 0 20px var(--neon-blue);">Consult Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's discuss how we can help your business grow</p>
+
+        <div class="contact-wrapper">
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/mkorwdqa" method="POST">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" name="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" required placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" required placeholder="+1 234 567 8900">
+                </div>
+                <div class="form-group">
+                    <label>Your Message</label>
+                    <textarea name="message" required placeholder="Tell us about your project..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <h3><i class="fas fa-envelope"></i> Email</h3>
+                    <p><a href="mailto:iamhasnainalisabri@gmail.com">iamhasnainalisabri@gmail.com</a></p>
+                </div>
+                <div class="contact-info-item">
+                    <h3><i class="fas fa-phone"></i> Phone</h3>
+                    <p><a href="tel:+923045760822">+92 304 5760822</a></p>
+                </div>
+                <div class="contact-info-item">
+                    <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
+                    <p>Bahawalpur, Punjab<br>Pakistan, 63100</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section" id="map" style="padding-top: 0;">
+        <div style="max-width: 1400px; margin: 0 auto; padding: 0 2rem;">
+            <div
+                style="border: 2px solid var(--neon-blue); border-radius: 20px; overflow: hidden; box-shadow: 0 0 30px rgba(0, 245, 255, 0.2); position: relative; transition: all 0.4s ease;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113401.76483525164!2d71.59751767665471!3d29.35422891398516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b90c79caeed53%3A0xe549eb9a68da566!2sBahawalpur%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1706277000000!5m2!1sen!2s"
+                    width="100%" height="450"
+                    style="border:0; display: block; filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%);"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>HDM</h4>
+                <p>Your trusted partner for premium digital marketing solutions.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/muhammad.hasnain.9088" target="_blank"
+                        class="social-link facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com/Muhamma49017013" target="_blank" class="social-link twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhammad-hasnain-550747341/" target="_blank"
+                        class="social-link linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/iamhasnain9088" target="_blank" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-col">
+                <h4>Skills & Services</h4>
+                <a href="#services">Web Development</a>
+                <a href="#services">Digital Marketing</a>
+                <a href="#services">SEO Optimization</a>
+                <a href="#services">Graphic Design</a>
+                <a href="#services">Email Marketing</a>
+                <a href="#services">Social Media</a>
+                <a href="#services">Lead Generation</a>
+                <a href="#services">Virtual Assistant</a>
+                <a href="#services">Data Entry</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Email: iamhasnainalisabri@gmail.com</p>
+                <p>Phone: +92 304 5760822</p>
+                <p>Bahawalpur, Punjab, Pakistan</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 HDM Digital Marketing Agency. All rights reserved.</p>
+            <p>Developed by <a href="https://github.com/MuhammadHasnain" target="_blank">Muhammad Hasnain</a></p>
+        </div>
+    </footer>
+
+    <!-- Floating Service Buttons -->
+    <div class="floating-buttons">
+        <a href="https://www.upwork.com" target="_blank" class="upwork-float" id="upworkBtn">
+            <i class="fab fa-upwork"></i>
+        </a>
+        <a href="https://www.fiverr.com" target="_blank" class="fiverr-float" id="fiverrBtn">
+            <img src="C:/Users/Muhammad Hasnain/.gemini/antigravity/brain/e5c0776c-7e80-443d-a6f8-2829791a7965/uploaded_media_1769466408625.png"
+                alt="Fiverr" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block;">
+        </a>
+    </div>
+
+    <!-- WhatsApp Side (Sticky) -->
+    <a href="#" target="_blank" class="whatsapp-side" id="whatsappSideBtn">
+        <i class="fab fa-whatsapp"></i> <span>Chat Now</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+
+    <!-- Custom Warning Modal -->
+    <div id="warningModal" class="warning-modal">
+        <div class="warning-content">
+            <h2 class="glitch" data-text="ACCESS DENIED">ACCESS DENIED</h2>
+            <p>Hey. Why are you trying to steal our code?<br>
+                The HDM team is watching everything.<br>
+                Do not try to exploit glitches.</p>
+            <p class="warning-sub">Please contact us if you need access.</p>
+            <p class="warning-footer">"Sorry, I will not do it again."</p>
+            <button onclick="closeWarning()">I Understand</button>
+        </div>
+    </div>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // ==========================================
+        //  IMAGE CONFIGURATION (URL Support)
+        // ==========================================
+        const siteImages = {
+            heroImage: 'hero-image.jpg', // Replace with your URL e.g. 'https://example.com/image.jpg'
+            founderImage: 'hero-image.jpg' // Replace with your URL
+        };
+
+        const freelanceLinks = {
+            upwork: 'https://www.upwork.com/freelancers/~01f30882193563458c', // ADD YOUR UPWORK LINK HERE
+            fiverr: 'https://www.fiverr.com/hasnain_hdm', // ADD YOUR FIVERR LINK HERE
+            whatsapp: 'https://wa.me/923045760822?text=Hi%20HDM!%20I%27m%20interested%20in%20your%20services.' // ADD YOUR WHATSAPP LINK HERE
+        };
+
+        // Apply Config Dynamically
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroImg = document.querySelector('.hero-img');
+            if (heroImg && siteImages.heroImage) heroImg.src = siteImages.heroImage;
+
+            const founderImg = document.querySelector('.founder-img');
+            if (founderImg && siteImages.founderImage) founderImg.src = siteImages.founderImage;
+
+            // Update Freelance Links
+            const upworkBtn = document.getElementById('upworkBtn');
+            const fiverrBtn = document.getElementById('fiverrBtn');
+            const whatsappSideBtn = document.getElementById('whatsappSideBtn');
+
+            if (upworkBtn) upworkBtn.href = freelanceLinks.upwork;
+            if (fiverrBtn) fiverrBtn.href = freelanceLinks.fiverr;
+            if (whatsappSideBtn) whatsappSideBtn.href = freelanceLinks.whatsapp;
+        });
+
+        // ==========================================
+        //  SITE PROTECTION
+        // ==========================================
+        // Block Shortcuts Robustly
+        document.addEventListener('keydown', function (e) {
+            const forbiddenKeys = ['c', 'v', 'x', 'u', 's', 'p', 'a'];
+            const isControlAction = e.ctrlKey || e.metaKey;
+
+            // F12
+            if (e.key === 'F12' || e.keyCode === 123) {
+                triggerProtection(e);
+            }
+
+            // Ctrl + [Forbidden Keys]
+            if (isControlAction && forbiddenKeys.includes(e.key.toLowerCase())) {
+                triggerProtection(e);
+            }
+
+            // Ctrl + Shift + I/J/C
+            if (isControlAction && e.shiftKey && ['i', 'j', 'c'].includes(e.key.toLowerCase())) {
+                triggerProtection(e);
+            }
+        }, { capture: true });
+
+        // Block Clipboard Events
+        ['copy', 'cut', 'paste', 'contextmenu'].forEach(event => {
+            document.addEventListener(event, e => {
+                // Ignore protection for specific elements to allow normal interaction
+                const interactiveElements = ['BUTTON', 'A', 'INPUT', 'TEXTAREA', 'SELECT'];
+                const isMobileToggle = e.target.closest('#mobileToggle');
+                const isWarningButton = e.target.closest('#warningModal button');
+
+                if (interactiveElements.includes(e.target.tagName) || isMobileToggle || isWarningButton) {
+                    return;
+                }
+
+                triggerProtection(e);
+            }, { capture: true });
+        });
+
+        // Use CSS for selection blocking instead of JS for better UX
+        document.body.style.webkitUserSelect = "none";
+        document.body.style.userSelect = "none";
+
+        function triggerProtection(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            showWarning();
+            return false;
+        }
+
+        function showWarning() {
+            const modal = document.getElementById('warningModal');
+            modal.style.display = 'flex';
+        }
+
+        function closeWarning() {
+            const modal = document.getElementById('warningModal');
+            modal.style.display = 'none';
+        }
+        // Particles Configuration
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#ff006e' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#00f5ff',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const mobileToggle = document.getElementById('mobileToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        }
+
+        document.getElementById('mobileToggle').addEventListener('click', toggleMenu);// Form Submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    alert('Your message has been received. The HDM team will contact you shortly. Thank you.');
+                    contactForm.reset();
+                } else {
+                    alert('Oops! There was a problem sending your message. Please try again.');
+                }
+            } catch (error) {
+                alert('Oops! There was a problem sending your message. Please check your connection.');
+            }
+        });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .portfolio-item, .pricing-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+
+        console.log('%cHDM Ultra-Modern Design 🚀', 'color: #ff006e; font-size: 24px; font-weight: bold;');
+        console.log('%cNeon Cyberpunk Theme', 'color: #00f5ff; font-size: 16px;');
+
+        // Back to Top Button Logic
+        const backToTop = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('active');
+            } else {
+                backToTop.classList.remove('active');
+            }
+        });
+
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Preloader Logic
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            const preloaderImg = document.getElementById('preloaderImg');
+
+            // Sync image with site config
+            if (preloaderImg && siteImages.founderImage) {
+                preloaderImg.src = siteImages.founderImage;
+            }
+
+            // Force 3 second duration
+            setTimeout(() => {
+                preloader.classList.add('fade-out');
+                // Allow scrolling after preloader is gone
+                document.body.style.overflow = 'auto';
+            }, 3000);
+        });
+
+        // Initialize with no scroll during preloader
+        document.body.style.overflow = 'hidden';
+    </script>
+
+</body>
+
+</html>
